@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
   <meta charset="UTF-8">
@@ -12,18 +12,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
 <body>
 
-    <div class="header-top">
+  <div class="header-top">
 
-      Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE - Valid only for 100 Users
-       
-    </div>
+    Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE - Valid only for 100 Users
+
+  </div>
 
 
   <div class="navbar">
@@ -35,50 +39,26 @@
   </div>
 
 
-  <!-- ANYDESK -->
-  <section class="landing">
+  <!-- NEW LANDING PAGE -->
 
-    <div class="mobile">
-
-      <img src="mobile.png" alt="">
-
-    </div>
-
-    <!--      <video width="100%" src="clion.mp4" autoplay muted loop></video>    -->
-
-
-
-    <div class="grid">
-      <div class="gird-col">
-
-        <div class="slider-main" id="slider-main">
-          <div class="details">
-            <h3> Get Your Scalp Analysed & Restore your Hairline with <span style="color:#d90429 ;">Proven Medical Techniques </span> with No Side Effects, 
-              No Pain & Guaranteed Results</h3>
-            <h4> Best & Easy way to Get Permanent, Natural Looking Hair 
-              with 99% Success Rate </h4>
-            <div class="details2">
-              For Both Male & Female Type Baldness
-
-            </div>
-
-            <button class="booking" onclick="togglePopup()" >
-             <h5>Book a Hair Scalp Analysis Appoinment<h5> 
-          
-                  <p>   #1 Affordable Hair Clinic in Ahmedabad with 100% Success Rates </p>
-              </button>
-            <div class="coupon"> Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="gird-col">
-
+  <!--
+  <section class="landing_2">
+    <main class="">
+      <header class="landing-header">
+        <h3>
+          Get Your Scalp Analysed & Restore your Hairline with
+          <span style="color:#d90429 ;">Proven Medical Techniques </span>
+          with No Side Effects, No Pain & Guaranteed Results
+        </h3>
+        <h4>
+          Best & Easy way to Get Permanent, Natural Looking Hair
+          with 99% Success Rate
+        </h4>
+      </header>
+      <div class="left-slider">
 
         <div class="slider">
           <div class="slides">
-
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
@@ -99,31 +79,127 @@
 
 
             <div class="navigation-auto">
-
               <div class="auto-btn1"></div>
               <div class="auto-btn2"></div>
               <div class="auto-btn3"></div>
               <div class="auto-btn4"></div>
-
             </div>
-
           </div>
-
         </div>
-
-
-
-
-
       </div>
-
-
-
-    </div>
-    </div>
+    </main>
   </section>
 
 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ANYDESK -->
+  <section class="landing">
+
+    <!--     <img src="mobile.png" alt=""> -->
+    <video width="100%" src="clion.mp4" autoplay muted loop></video>
+
+
+
+    <div class="grid">
+      <div class="gird-col">
+        <div class="slider-main" id="slider-main">
+          <div class="details">
+            <h3> Get Your Scalp Analysed & Restore your Hairline with <span style="color:#d90429 ;">Proven Medical
+                Techniques </span> with No Side Effects,
+              No Pain & Guaranteed Results</h3>
+            <h4> Best & Easy way to Get Permanent, Natural Looking Hair
+              with 99% Success Rate </h4>
+              <button class="details2">
+                For Both Male & Female Type Baldness
+        
+              </button>
+
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="gird-col">
+
+
+
+
+
+        <div class="takeaway-slider1" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+
+          <div class="carousel-cell1">
+
+            <img class="takeaway-image1" src="9.png">
+
+          </div>
+          <div class="carousel-cell1">
+
+            <img class="takeaway-image1" src="10.png">
+          </div>
+          <div class="carousel-cell1">
+
+            <img class="takeaway-image1" src="17.png">
+          </div>
+          <div class="carousel-cell1">
+
+            <img class="takeaway-image1" src="18.png">
+          </div>
+          <div class="carousel-cell1">
+
+            <img class="takeaway-image1" src="21.png">
+          </div>
+
+          
+
+        </div>
+      
+      </div>
+    
+    
+
+
+    </div>
+
+    <div class="button-parent">
+    <button class="booking" onclick="togglePopup()">
+      <h5>Book a Hair Scalp Analysis Appoinment - Just 499 INR<h5>
+
+          <p> #1 Affordable Hair Clinic in Ahmedabad with 100% Success Rates </p>
+    </button>
+    <div class="couponn"> Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE
+    </div>
+
+   </div>      
+  
+  
+
+   <div class="button-parent2">
+    <button class="booking2" onclick="togglePopup()">
+      <h5>Book a Hair Scalp Analysis Appoinment - Just 499 INR<h5>
+
+          <p> Result Guaranteed or 100% Refund</p>
+    </button>
+    <div class="couponn2"> 
+      Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE
+    </div>
+
+   </div>
+   
+   
+
+  </section>
 
 
 
@@ -155,6 +231,9 @@
 
   <div class="reviews">
 
+
+
+
     <div class="google">
       <img width="200px" src="google.jpeg" alt="">
       <p>4.6 out of 178 Ratings</p>
@@ -167,74 +246,84 @@
 
   </div>
 
+
+ 
+
+
+
+
   <!--     3 step Holistic hair restoration SECTION !!!!!   -->
-
-  <div class="step">
-    <h2> Your <span style="color: #d90429;">3 STEP Holistic Hair Restoration </span> Journey with us </h2>
-    <p> <b>Introducing Bio-Follicles with <span style="color:#d90429 ;"> Dermatology + Ayurveda + Nutrition </span> </b>
-    </p>
-  </div>
-
-
-  <!--     3 step Holistic hair restoration GRID !!!!!   -->
-  <div class="steps-grid">
-
-    <div class="steps">
-      <h2>STEP 1</h2>
-      <img width="180px" src="step1.png" alt="">
-      <h3>Get Scalp Analysis Report</h3>
-      <p>Discover the Root cause of your Hair Loss with Scalp Analysis Report.
-
-      <div class="our"> Our Experienced Dermatologist will check your Hair, Scalp, and Cuticle and will prescribe you
-        the right
-        treatment for your stage of Hair loss. </div>
+  <section class="steps-section">
+    <div class="step">
+      <h2> Your <span style="color: #d90429;">3 STEP Holistic Hair Restoration </span> Journey with us </h2>
+      <p> <b>Introducing Bio-Follicles with <span style="color:#d90429 ;"> Dermatology + Ayurveda + Nutrition </span>
+        </b>
       </p>
     </div>
-    <div class="steps">
+
+
+    <!--     3 step Holistic hair restoration GRID !!!!!   -->
+    <div class="steps-grid">
       <div class="steps">
-        <h2>STEP 2</h2>
-        <img width="180px" src="step2.png" alt="">
-        <h3>Choose Right Plan based on your Hair Loss Reports</h3>
-        <p> Our Dermatologists consult you on the right treatment which will guarantee you 100% permanent and Natural
-          Results.</p>
+        <h2>STEP 1</h2>
+        <img width="180px" src="step1.png" alt="">
+        <h3>Get Scalp Analysis Report</h3>
+        <p>Discover the Root cause of your Hair Loss with Scalp Analysis Report.
+
+        <div class="our"> Our Experienced Dermatologist will check your Hair, Scalp, and Cuticle and will prescribe you
+          the right
+          treatment for your stage of Hair loss. </div>
+        </p>
       </div>
-    </div>
-    <div class="steps">
       <div class="steps">
-        <h2>STEP 3 </h2>
-        <img width="180px" src="step3.png" alt="">
-        <h3>Regrow Your Hair with our Personal Hair Coach</h3>
-        <p>Our Personal Hair Coach will guide you throughout your journey until you get Results. </p>
+        <div class="steps">
+          <h2>STEP 2</h2>
+          <img width="180px" src="step2.png" alt="">
+          <h3>Choose Right Plan based on your Hair Loss Reports</h3>
+          <p> Our Dermatologists consult you on the right treatment which will guarantee you 100% permanent and Natural
+            Results.</p>
+        </div>
       </div>
+      <div class="steps">
+        <div class="steps">
+          <h2>STEP 3 </h2>
+          <img width="180px" src="step3.png" alt="">
+          <h3>Regrow Your Hair with our Personal Hair Coach</h3>
+          <p>Our Personal Hair Coach will guide you throughout your journey until you get Results. </p>
+        </div>
+      </div>
+
     </div>
 
-  </div>
+    <!-- Book  appoinment -->
 
-  <!-- Book  appoinment -->
+    <div class="center">
+      <button class="book-hair" onclick="togglePopup()">
+        <h5>Book a Hair Scalp Analysis Appoinment - Just 499 INR<h5>
+            <p> For First 100 Registrations</p>
+      </button>
+      <div class="coupon2"> Use Coupon scalptest to activate 100% Discount
+      </div>
 
-  <div class="center">
-    <button class="book-hair"  onclick="togglePopup()">
-      <h5>Book a Hair Scalp Analysis Appoinment<h5>
-          <p> For First 100 Registrations</p>
-    </button>
-    <div class="coupon2"> “use coupon scalptest to activate 100% discount”</div>
+    </div>
 
-  </div>
+
+  </section>
 
   <!-- The 5 Hair Reversal Expertise at Clion Care Clinic   section  -->
 
 
   <div class="expertise">
-    <b>The <span style="color:#d90429 ;"> Hair Reversal Expertise </span> at Clion Care Clinic </b>
+    <b>The <span style="color:#d90429 ;">5 Hair Reversal Expertise </span> at Clion Care Clinic </b>
   </div>
 
   <div class="expertise-images">
-    <img class="rev" width="304px" src="exp2.svg" alt="">
+    <img class="rev" width="304px" src="exp6.svg" alt="">
     <img class="rev" width="304px" src="exp1.svg" alt="">
     <img class="rev" width="304px" src="exp3.svg" alt="">
     <img class="rev" width="304px" src="exp4.svg" alt="">
 
-    <img class="rev" width="304px" src="exp6.svg" alt="">
+    <img class="rev" width="304px" src="exp2.svg" alt="">
 
   </div>
 
@@ -243,7 +332,7 @@
 
   <!-- The Right Hair Transplant gives you Permanent Results   carousel  section !!!! -->
 
-  <!-- The Right Hair Transplant gives you Permanent Results   carousel  section !!!! -->
+  <!-- The Right Hair Transplant gives you Permanent Results   carousel  section !!!! 
 
 
   <div class="containerrr">
@@ -360,7 +449,7 @@
 
 
 
-
+-->
 
 
 
@@ -386,74 +475,58 @@
 
 
 
-  <div class="carousel">
-    <span style="letter-spacing: 1px ; "> <b>The 7 Takeaway of your <span style="color:#d90429 ;"> Free Scalp Analysis
-        </span> </b> </span>
+  <div class="title-takeaway">The <span style="color: #d90429;">7 Takeaway</span> of your Free Scalp Analysis </div>
+  <div class="takeaway-slider" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+
+    <div class="carousel-cell">
+      <img class="takeaway-image" src="takeaway1.png">
+
+    </div>
+    <div class="carousel-cell">
+      <img class="takeaway-image" src="takeaway2.png">
+    </div>
+    <div class="carousel-cell">
+      <img class="takeaway-image" src="takeaway3.png">
+    </div>
+    <div class="carousel-cell">
+      <img class="takeaway-image" src="takeaway4.png">
+    </div>
+    <div class="carousel-cell">
+      
+    </div>
+    <div class="carousel-cell">
+
+      <img class="takeaway-image" src="takeaway6.png">
+    </div>
+    <div class="carousel-cell">
+      
+      <img class="takeaway-image" src="takeaway7.png">
+    </div>
+
 
   </div>
 
 
 
 
-  <div class="cro">
-    <input type="radio" name="position" checked />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <main id="carousel">
-      <div class="item">
-     <h2>Find Hair Loss Status</h2>
-        <img  src="tt.png" alt="">
-        <p1>Men and Women have different hair loss patterns.  
-          We use a guide to determine which class closely matches 
-          your pattern of hair loss.</p1>
 
-      </div>
-      <div class="item">
-        <h2>Discover Scalp status</h2>
-        <img  src="ttt.png" alt="">
-        <p1>We find your signs of dryness like scales or flakes.  A shiny or muddy appearance indicates excess oil production.  
-          Determining the natural state of your scalp is crucial to determining the best ideal treatment.</p1>
-      </div>
-      <div class="item">
-        <h2>Measure hair density </h2>
-        <img  src="tttt.png" alt="">
-        <p1>We will measure upto one centimeter of your scalp.  
-          You will know the count of hair follicles in that given area and we will understand if you have an average amount or below average amount.  
-          </p1>
-      </div>
-      <div class="item">
-        <h2>Find Keratin of scalp</h2>
-        <img src="ttttt.png" alt="">
-        <p1>We use a special blue-hued light to detect the presence of keratin on the scalp.  
-          This build up and residue can be damaging to your hair growth and it must be removed regularly. </p1>
-      </div>
-      <div class="item">
-        <h2>Exposure of Scalp vessels</h2>
-        <img src="tttttt.png" alt="">
-        <p1>We will examine your scalp for inflammation or sensitivity.  If you have capillaries exposed and your scalp is 
-          itchy or inflamed, you must address it in order to grow healthy hair.
-        </p1>
-      </div>
-      <!--   <div class="item">        <p> Exposure of the Scalp's Vessel </p>
-        <img width="300px" height="100%" src="four.jpg" alt=""></div>
-      <div class="item">        <p> Find Keratin of your Scalp   </p>
-        <img width="300px" height="100%" src="first.jpg" alt=""></div>     -->
-      <main>
-  </div>
 
-  <div class="book-button" onclick="togglePopup()">
-    <button class="child">
-      <div> <b> Book a Free Scalp Analysis </b> </div>
-      <span id="only"> Only for First 100 Patients </span>
 
+  <div class="center">
+    <button class="book-hair" onclick="togglePopup()">
+      <h5>Book a Hair Scalp Analysis Appoinment - Just 499 INR<h5>
+          <p> For First 100 Registrations</p>
     </button>
+    <div class="coupon2"> 100% High Quality Hair Restoration Guaranteed or Get 100% Refund
+    </div>
 
   </div>
-  <div class=" coupon-2"> Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE </div>
+
+
+
+
+
+
 
 
   <!-- CLION IMAGE   section !!!! -->
@@ -466,154 +539,260 @@
 
 
   <!--   Frequently Asked Questions  SECTION  !!!! -->
-  
+
   <section class="section-faq">
 
     <div class="parent-faq">
 
-    <h2 class="title">Frequently Asked <span style="color:#d90429 ;"> Questions </span> </h2>
-    <div class="faq">
-      <div class="question">
-        <h3> How can scalp analysis treat hair fall?        </h3>
+      <h2 class="title">Frequently Asked <span style="color:#d90429 ;"> Questions </span> </h2>
+      <div class="faq">
+        <div class="question">
+          <h3> How can scalp analysis treat hair fall? </h3>
 
-        <svg width="15" height="10" viewBox="0 0 42 25">
+          <svg width="15" height="10" viewBox="0 0 42 25">
 
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
 
-        </svg>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>Scalp analysis helps to find the root cause of hairfall based on which customised treatment can be offered
+            to reverse the condition.</p>
+        </div>
       </div>
-      <div class="answer">
-        <p>Scalp analysis helps to find the root cause of hairfall based on which customised treatment can be offered to reverse the condition.</p>
+
+
+      <div class="faq">
+        <div class="question">
+          <h3>Can I solve hairloss of any stage?</h3>
+
+          <svg width="15" height="10" viewBox="0 0 42 25">
+
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+
+          </svg>
+        </div>
+        <div class="answer">
+          <p>In most of the cases, you can completely reverse hairloss but you must not delay taking a scalp analysis &
+            finding the exact cause.</p>
+        </div>
       </div>
-    </div>
 
+      <div class="faq">
+        <div class="question">
+          <h3> Is the Scalp analysis test painful? </h3>
 
-    <div class="faq">
-      <div class="question">
-        <h3>Can I solve hairloss of any stage?</h3>
+          <svg width="15" height="10" viewBox="0 0 42 25">
 
-        <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
 
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
-
-        </svg>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>No, it is absolutely painless.</p>
+        </div>
       </div>
-      <div class="answer">
-        <p>In most of the cases, you can completely reverse hairloss but you must not delay taking a scalp analysis & finding the exact cause.</p>
+
+      <div class="faq">
+        <div class="question">
+          <h3> Does it affect my brain?
+
+          </h3>
+
+          <svg width="15" height="10" viewBox="0 0 42 25">
+
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+
+          </svg>
+        </div>
+        <div class="answer">
+          <p> No, it doesn't affect your brain in anyway. </p>
+        </div>
       </div>
-    </div>
 
-    <div class="faq">
-      <div class="question">
-        <h3> Is the Scalp analysis test painful?     </h3>
+      <div class="faq">
+        <div class="question">
+          <h3> Will I get natural looking hair? </h3>
 
-        <svg width="15" height="10" viewBox="0 0 42 25">
+          <svg width="15" height="10" viewBox="0 0 42 25">
 
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
 
-        </svg>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>Offcourse, you will get natural looking hair at our centre but you must have a realistic expectations. </p>
+        </div>
       </div>
-      <div class="answer">
-        <p>No, it is absolutely painless.</p>
+
+
+
+      <div class="faq">
+        <div class="question">
+          <h3> Is there any side effects of scalp analysis test
+          </h3>
+
+          <svg width="15" height="10" viewBox="0 0 42 25">
+
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+
+          </svg>
+        </div>
+        <div class="answer">
+          <p>No, there are no side effects of scalp analysis test.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="faq">
-      <div class="question">
-        <h3> Does it affect my brain?
 
-        </h3>
+      <div class="faq">
+        <div class="question">
+          <h3> What's the cost of the scalp analysis test? </h3>
 
-        <svg width="15" height="10" viewBox="0 0 42 25">
+          <svg width="15" height="10" viewBox="0 0 42 25">
 
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
 
-        </svg>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>In our centre, for the first 50 clients we are giving free analysis test for bald people.</p>
+        </div>
       </div>
-      <div class="answer">
-        <p> No, it doesn't affect your brain in anyway. </p>
+
+
+
+      <div class="faq">
+        <div class="question">
+          <h3> Why should you choose Clion Hair Clinic and How to Contact Us? </h3>
+
+          <svg width="15" height="10" viewBox="0 0 42 25">
+
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+
+          </svg>
+        </div>
+        <div class="answer">
+          <p>We vision to make Quality hair transplant at most affordable cost. Our doctors have more than 10+ Years of experience with a combination of strong Research and Development towards Hair and Skin.
+          </p>
+
+         <p> <b> You can contact us at +91 932 744 3271 for all the details.</b>     </p>   
+            
+        </div>
       </div>
-    </div>
 
-    <div class="faq">
-      <div class="question">
-        <h3> Will I get natural looking hair?        </h3>
 
-        <svg width="15" height="10" viewBox="0 0 42 25">
 
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
+      <div class="center">
+        <button class="book-hair" onclick="togglePopup()">
+          <h5>Book a Hair Scalp Analysis Appoinment - Just 499 INR<h5>
+              <p> Only for First 100 Patients</p>
+        </button>
+        <div class="coupon2">100% High Quality Hair Restoration Guaranteed or Get 100% Refund
+        </div>
 
-        </svg>
       </div>
-      <div class="answer">
-        <p>Offcourse, you will get natural looking hair at our centre but you must have a realistic expectations. </p>
-      </div>
-    </div>
 
 
 
-    <div class="faq">
-      <div class="question">
-        <h3> Is there any side effects of scalp analysis test
-        </h3>
-
-        <svg width="15" height="10" viewBox="0 0 42 25">
-
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
-
-        </svg>
-      </div>
-      <div class="answer">
-        <p>No, there are no side effects of scalp analysis test.</p>
-      </div>
-    </div>
-
-
-    <div class="faq">
-      <div class="question">
-        <h3> What's the cost of the scalp analysis test?   </h3>
-
-        <svg width="15" height="10" viewBox="0 0 42 25">
-
-          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecape="round" />
-
-        </svg>
-      </div>
-      <div class="answer">
-        <p>In our centre, for the first 50 clients we are giving free analysis test for bald people.</p>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="book-button" onclick="togglePopup()">
-      <button class="child">
-        <div> <b> Book a Free Scalp Analysis </b> </div>
-        <span id="only"> Only for First 100 Patients </span>
-
-      </button>
-
-    </div>
-    <div class=" coupon-2"> Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE </div>
 
 
   </section>
-</div>
+  </div>
 
   <!--      2500+  Success  Stories  & Counting     SECTION  !!!! -->
 
 
   <section class="success">
-    <div class="s">
       <p> <span style="color:#d90429 ;"> 2500+ Success </span> Stories & Counting </p>
 
-      <img src="success.png" alt="">
+      <div class="story-wrapper">
+        <img src="story.png" alt="">
+      </div>
+  </section>
+
+
+
+
+  <!--      google reviews    SECTION  !!!! -->
+
+
+
+  <div class="people-reviews">
+    <h1>Google <span style="color:red ;"> <u>Reviews</u></span> </h1>
+    <div class="google-reviews">
+    </div>
+      
+
+    
+
+  <div class="reviews-slider3" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+
+    <div class="carousel-cell3">
+      <img  src="starr.jpg" alt="">
+      <p>The combination of hair transplant sir you did it was really amazing for my results my hair line look totally natural. Nobody can say I have done my hair transplant 10 months back ..
+        Thanks to all to change my life. best Clion Care Hair Transplantation Clinic in Gujarat.
+      </p>
+
+      <h3>Rahish Ansari </h3>
 
     </div>
 
-  </section>
+    <div class="carousel-cell3">
+      <img  src="starr.jpg" alt="">
+      <p>Clion Care Hair Transplantation Clinic in Gujarat is the world class clinic for hair transplant. I have got amazing results within an year of the surgery. Dr.  
+        is very professional and makes you understand about the entire hair transplant procedu
+      </p>
+
+      <h3>Arhan Singh </h3>
+    </div>
+    <div class="carousel-cell3">
+      <img  src="starr.jpg" alt="">
+      <p>Wonderful experience at Hair Transplantation Clinic when I was come for consultation 
+        it's was amazing and I got hair transplant in Gujarat and seriously in starting I was nervous
+         but my results is also unexpected Dr.  is very much experienced
+         surgeon. Staff is so humble they are so friendly ... All the best for your bright future
+      </p>
+
+      <h3>Shabnam Chopra </h3>
+    </div>
+
+    <div class="carousel-cell3">
+      <img  src="starr.jpg" alt="">
+      <p>I am happy to get hair transplant 
+        treatment from Clion Care Hair Transplantation Clinic in Gujarat Because 
+        the results are amazing. I look much younger now. Also I want to thank Dr 
+         who performed my surgery. Thanks a lot!
+      </p>
+
+      <h3>Sapna Singhania </h3>
+    </div>
+     
+   
+    <div class="carousel-cell3">
+      <img  src="starr.jpg" alt="">
+      <p>It was really an awesome experience at Gujrat , never thought a surgery
+        would be this much painless. Doctor and technicians are experienced. Prices are 
+        very affordable as compared to other clinics. Facilities is totally best . My surgery 
+        went excellent and my results is so natural.
+      </p>
+
+      <h3>Arun Kumar</h3>
+
+    </div>
+
+   
+    
+    
+
+  </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -637,40 +816,29 @@
 
       <div class="grid-doc">
 
-        <h2>Dr Eric Jones</h2>
-        <p>MBBS, Gold Medalist MD (AIIMS, New Delhi), Diplomate of ABHRS (USA), FISHRS
-        <p>
+        <h2>Dr. Hidayad Memon</h2>
+        <p2>(M.D. Dermatologist) </p2>
 
-          <img class="doc-img" src="eight.jpg" alt="">
+        <img class="doc-img" src="doc.jpg" alt="">
 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque eum ab, eius possim
-          us porro vitae quidem natus. Praesentium sint voluptatibus at libero aliquam excepturi ipsumdelectus
-          consequuntur corporis obcaecati.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque eum ab, eius possimus porr
-          o vitae quidem natus. Praesentium sint voluptatibus at libero aliquam excepturi ipsum delectus
-          consequuntur corporis obcaecati.
+        <p> Dr. Hidayad Memon, a Specialist in Dermatologists, is a Board Certified and experienced Cosmetic surgeon. he
+          is considered the best
+          hair specialist in Gujarat with over 10+ Years of Experience
         </p>
 
       </div>
 
       <div class="grid-doc">
 
-        <h2>Dr Eric Jones</h2>
-        <p>MBBS, Gold Medalist MD (AIIMS, New Delhi), Diplomate of ABHRS (USA), FISHRS
-        <p>
+        <h2>Dr. Aparna Ray</h2>
+        <p2>(MDS, Oral & Maxillofacial Surgeon) </p2>
 
-          <img class="doc-img" src="eight.jpg" alt="">
+        <img class="doc-img" src="doc2.jpg" alt="">
 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque eum ab, eius possim
-          us porro vitae quidem natus. Praesentium sint voluptatibus at libero aliquam excepturi ipsumdelectus
-          consequuntur corporis obcaecati.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque eum ab, eius possimus porr
-          o vitae quidem natus. Praesentium sint voluptatibus at libero aliquam excepturi ipsum delectus
-          consequuntur corporis obcaecati.
+        <p> Dr. Aparna Ray is an exceptionally talented CranioMaxillofacial Surgeon, super-specialized in Facial
+          Cosmetics, and Hair Transplantation Procedures.
+          Specialized in Hair transplant Surgeries &
+          Facial Cosmetology
         </p>
       </div>
     </div>
@@ -678,15 +846,16 @@
 
 
 
-    <div class="book-button" onclick="togglePopup()">
-      <button class="child">
-        <div> <b> Book a Free Scalp Analysis </b> </div>
-        <span id="only"> Only for First 100 Patients </span>
-
+    <div class="center">
+      <button class="book-hair" onclick="togglePopup()">
+        <h5>Book a Hair Scalp Analysis Appoinment - Just 499 INR<h5>
+            <p>Only For First 100 Patients</p>
       </button>
+      <div class="coupon2"> 100% High Quality Hair Restoration Guaranteed or Get 100% Refund
+      </div>
 
     </div>
-    <div class=" coupon-2"> Use the Coupon "ScalpTest" to get the Scalp Analysis Appointment for FREE </div>
+
 
 
 
@@ -694,6 +863,16 @@
 
 
   </section>
+
+
+  <div class="footer">
+    <img width="100px" src="footer.jpg" alt="">
+
+    <p> <span style="color:#d1193e ;"> Contact us </span> at +91 932 744 3271 or <span style="color:#d1193e ;"> Email us
+      </span> at info.clion@gmail.com</p>
+
+  </div>
+
 
 
 
@@ -708,129 +887,128 @@
     <!-- close btn -->
     <button class="close-btn" onclick="togglePopup()">&times;</button>
     <div class="form">
-      <h2>Register a Scalp Analysis Test for 699INR </h2>
-      <p>Use the coupon "ScalpTest" to book your free Test </p>
-      <div class="form-element">
-        <label></label>
-        <input type="text" id="name" placeholder="Your Name Here">
-      </div>
+      <h2>Register a  <span style="color:#42B99F;"> Scalp Analysis Test</span> for <span style="color: #42B99F;"> 699INR</span>  </h2>
+      <p>Use the coupon <b> "ScalpTest"</b> to book your free Test </p>
 
-      <div class="form-element">
-        <label></label>
-        <input type="text" id="email" placeholder="Your Email Address Here">
-      </div>
-
-      <div class="form-element">
-        <label></label>
-        <input type="text" id="" placeholder="Your Whatsapp number Here">
-      </div>
-      <h5>Your Hair Concerns</h5>
-
-      <div class="check">
-
+      <form action="" id="contact-form">
         <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label>HairLoss</label>
+          <input type="text" name="name" placeholder="Your Name Here">
         </div>
 
         <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label>Baldness</label>
+          <input type="text" name="email" placeholder="Your Email Address Here">
         </div>
 
         <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label>Dandruff</label>
+          <input type="text" name="number" placeholder="Your Whatsapp number Here">
         </div>
+        <h5>Your Hair Concerns</h5>
 
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label>Thinning</label>
-        </div>
+        <div class="check">
+          <div class="form-element">
+            <input type="checkbox" name="hairloss">
+            <label>HairLoss</label>
+          </div>
 
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label>Splitends</label>
-        </div>
+          <div class="form-element">
+            <input type="checkbox" name="Baldness">
+            <label>Baldness</label>
+          </div>
 
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label>Grey Hair</label>
-        </div>
+          <div class="form-element">
+            <input type="checkbox" naname="Dandruff">
+            <label>Dandruff</label>
+          </div>
 
+          <div class="form-element">
+            <input type="checkbox" name="Thinning">
+            <label>Thinning</label>
+          </div>
 
-      </div>
+          <div class="form-element">
+            <input type="checkbox" name="Splitends">
+            <label>Splitends</label>
+          </div>
 
+          <div class="form-element">
+            <input type="checkbox" name="Grey Hair">
+            <label>Grey Hair</label>
+          </div>
 
-
-
-      <h5> Grade of your Hairline  </h5>
-
-      <div class="grade">
-
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label><img width="100px" height="100px" src="eight.jpg" alt=""></label>
-
-        </div>
-
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label><img width="100px" height="100px" src="eight.jpg" alt=""></label>
 
         </div>
 
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label><img width="100px" height="100px" src="eight.jpg" alt=""></label>
+
+
+
+        <h5> Enter your stage of Hairloss </h5>
+
+        <div class="grade">
+
+          <div class="form-element">
+            <input type="checkbox" name="grade">
+            <label><img width="70px" height="70px" src="grade1.png" alt=""></label>
+
+          </div>
+
+          <div class="form-element">
+            <input type="checkbox" name="grade">
+            <label><img width="70px" height="70px" src="grade2.png" alt=""></label>
+
+          </div>
+
+          <div class="form-element">
+            <input type="checkbox" name="grade">
+            <label><img width="70px" height="70px" src="grade3.png" alt=""></label>
+
+          </div>
+
+          <div class="form-element">
+            <input type="checkbox" name="grade">
+            <label><img width="70px" height=70px" src="grade4.png" alt=""></label>
+
+          </div>
+
+          <div class="form-element">
+            <input type="checkbox" name="grade">
+            <label><img width="70px" height="70px" src="grade5.png" alt=""></label>
+
+          </div>
+          <div class="form-element">
+            <input type="checkbox" name="grade">
+            <label><img width="70px" height="70px" src="grade6.png" alt=""></label>
+
+          </div>
 
         </div>
 
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label><img width="100px" height="100px" src="eight.jpg" alt=""></label>
+        <h3>Your Historical Medical Treatment</h3>
+
+        <select class="history">
+
+          <option>Followed Supplements Like Vitamin B,C,D   </option>
+          <option>Used Different Products (Shampoos, Conditioners, Masque, Oils) </option>
+          <option>Life Style Modification - Diet & Gym</option>
+          <option>Consulted Dermatologist for PRP, Hair Transplant</option>
+          <option>Learning about other Procedure</option>
+
+        </select>
+
+
+
+        <div class="book-popup">
+          <button type="submit" class="popup-booking" onclick="writeUserData">
+            <div> <b> Book My Hair Scalp Analysis Checkup </b> </div>
+            <span id="only"> Your Free Consultation is valid only for 7 Days </span>
+
+          </button>
 
         </div>
-
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label><img width="100px" height="100px" src="eight.jpg" alt=""></label>
-
-        </div>
-        <div class="form-element">
-          <input type="checkbox" id="concern">
-          <label><img width="100px" height="100px" src="eight.jpg" alt=""></label>
-
-        </div>
-
-      </div>
-
-      <h3>Your Historical Medical Treatment</h3>
-
-      <select class="history">
-
-        <option>Used Different Products (Shampoos, Conditioners, Masque, Oils)</option>
-        <option>Followed Supplements Like Vitamin B,C,D </option>
-        <option>Life Style Modification - Diet & Gym</option>
-        <option>Consulted Dermatologist for PRP, Hair Transplant</option>
-        <option>Learning about other Procedure</option>
-
-      </select>
+        <div class=" coupon-2"> *Coupon is Valid only for First 100 Patients Every Month </div>
+        <button type="submit" onclick="saveFormData(event)">SUBMIT</button>
 
 
-
-
-      <div class="book-popup">
-        <button class="popup-booking" >
-          <div> <b> Book My Hair Scalp Analysis Checkup </b> </div>
-          <span id="only"> Your Free Consultation is valid only for 7 Days </span>
-
-        </button>
-
-      </div>
-      <div class=" coupon-2"> *Coupon is Valid only for First 100 Patients Every Month </div>
-
-
+      </form>
 
 
 
@@ -857,14 +1035,89 @@
 
 
 
+
+
+
+
+
+
+
+
+  <!--    
+
+  <div class="thankyou-popup" id="thankyou-popup">
+    
+    <button class="close-btn2" >&times;</button>
+    <div class="message">
+
+      <h2>Thank You </h2>
+      <p>Your details Successfully submitted  </p>
+      
+
+
+      </div>
+
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBOoKUqd6ZqAqbWO8I0efShq38mFtSrQCs",
+      authDomain: "clion-2.firebaseapp.com",
+      databaseURL: "https://clion-2-default-rtdb.firebaseio.com",
+      projectId: "clion-2",
+      storageBucket: "clion-2.appspot.com",
+      messagingSenderId: "545183959858",
+      appId: "1:545183959858:web:4759fbe86375034d4f252b",
+      measurementId: "G-QL837LT54J"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <script src="clion.js"></script>
 
 
 </body>
+
+
+
+
+
+
+
+
 
 </html>

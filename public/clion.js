@@ -6,53 +6,6 @@ faqs.forEach((faq) => {
   });
 });
 
-const swiper = new Swiper(".swiper", {
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-
-  loop: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const swiper2 = new Swiper(".swiper2", {
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-
-  loop: true,
-
-  pagination: {
-    el: ".swiper-pagination2",
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-
-var counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 5000);
-
-
-
 let isVisible = false;
 
 const togglePopup = () => {
@@ -67,4 +20,62 @@ const togglePopup = () => {
     isVisible = true;
   }
 };
+
+
+
+
+
+const BASE_DB_URL = "https://clion-2-default-rtdb.firebaseio.com";
+
+const testSaveData = async () => {
+  console.log("init data to db");
+  await fetch(`${BASE_DB_URL}/cliondata.json`, {
+    method: "PUT",
+    body: JSON.stringify({
+      name: "prores",
+      name: "prores",
+      name: "prores",
+      name: "prores",
+      name: "prores",
+      last: true,
+    }),
+  });
+  console.log("saved data to db successfully");
+};
+
+// testSaveData();
+
+const saveFormData = async (event) => {
+  event.preventDefault();
+
+  const clionForm = document.getElementById("contact-form");
+
+  const clionFormData = new FormData(clionForm);
+  console.log(clionFormData);
+
+  const dataToSend = {};
+
+  for (const pair of clionFormData.entries()) {
+    const [key, value] = pair;
+    dataToSend[key] = value;
+  }
+
+  await fetch(`${BASE_DB_URL}/cliondata/${dataToSend["name"]}.json`, {
+    method: "PUT",
+    body: JSON.stringify(dataToSend),
+  });
+
+  console.log("form saved successfully");
+};
+
+
+
+
+
+
+
+
+
+
+
 
