@@ -1,0 +1,1807 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  display: none;
+
+  height: 44px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.header-top {
+  background-color: #d1193e;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.takeaway-slider1 {
+  width: 400px;
+}
+
+@media (max-width: 1000px) { 
+ 
+
+ 
+ 
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .gird-col .slider-main {
+    width: 380px;
+    margin-top: 1rem;
+    
+  }
+
+  .gird-col .details h3 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    padding: 30px;
+  }
+
+  .gird-col .details h4 {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .gird-col button h5 {
+    font-size: 0.8rem;
+  }
+
+  .gird-col button p {
+    font-size: 0.6rem;
+  }
+
+  .gird-col .details2 {
+    font-size: 1rem;
+    display: none;
+  }
+
+  .takeaway-slider1 {
+    width: 300px;
+    margin-top: 2rem;
+  }
+
+ .booking {
+ 
+ display: none;
+  bottom: 0;
+
+
+ }
+.coupon {
+
+  display: none;
+}
+
+.couponn {
+
+  display: none;
+}
+
+
+
+
+}
+
+  @media (max-width: 389px) {
+
+  
+    .grid {
+     
+      gap: 0.1rem;
+    }
+
+}
+
+
+@media (max-width: 2500px) and (min-width: 1100px) {
+
+
+ .landing button {
+
+
+  bottom: 20px;
+  
+  }
+
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+.landing img {
+  width: 100%;
+  height: 120%;
+}
+
+.landing {
+  position: relative;
+  min-height: 100vh;
+
+  width: 100%;
+  /* background-color: #d90429; */
+}
+
+.landing video {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: -10;
+  height: 100vh;
+}
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(1, 20rem);
+  grid-template-rows: auto;
+  width: 100%;
+  column-gap: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 3rem;
+  
+}
+
+.parent video {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+
+.slider-main {
+  width: 500px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 10px;
+}
+.details h3 {
+  font-size: 1.8rem;
+  
+}
+
+h4 {
+  padding-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.details2 {
+  color: #353535;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  border-radius: 7px;
+  border: none;
+  margin-top: 1rem;
+  background-color: #f5cb5c;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+
+.button-parent{
+
+
+text-align: center;
+}
+
+
+.booking {
+  position: relative;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 40rem;
+  color: #ffffff;
+  background-color: #ee3e38;
+  cursor: pointer;
+ 
+}
+
+.booking p {
+  padding-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.booking:hover {
+  opacity: 0.9;
+  scale: 1.02;
+}
+
+.booking h5 {
+  font-size: 1.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.couponn {
+  padding-top: 0.1rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+
+
+
+ .landing .button-parent2 {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 8px;
+  }
+  
+
+
+
+
+
+
+
+  .button-parent2{
+
+    text-align: center;
+  }
+
+
+.booking2 {
+  position: relative;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #ffffff;
+  background-color: #ee3e38;
+  cursor: pointer;
+ 
+}
+
+.booking2 p {
+  padding-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+
+.booking2:hover {
+  opacity: 0.9;
+  scale: 1.02;
+}
+
+.booking2 h5 {
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.couponn2 {
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(7, 1, 1);
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  justify-content: space-between;
+}
+
+.header {
+  justify-content: space-between;
+
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*
+.slider {
+  width: 420px;
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.slides {
+  height: 100%;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 1s;
+}
+.slide img {
+  width: 500px;
+  height: 500px;
+}
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 400px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40d3dc;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+css for automatic navigation */ .navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+/* media queris  header */
+
+@media (max-width: 850px) {
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .header {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    line-height: 18px;
+   
+  }
+}
+
+/* Google Justdail reviews section */
+
+.Rated {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 4rem;
+  overflow-x: hidden;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  margin-top: 3.1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+}
+
+.google p {
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.justdial p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  
+  .reviews img{
+   
+   width: 160px;
+
+  }
+
+  .reviews {
+   gap: 2rem;
+   display: flex;
+
+  }
+
+
+
+  .justdial p {
+    margin-top: 0.1rem;
+  }
+  .Rated {
+    font-size: 1.5rem;
+    padding: 14px;
+  }
+
+  .reviews p {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media only screen and (max-width: 2000px) and (min-width: 500px){
+
+  
+.button-parent2 {
+
+  display: none;
+}
+
+
+}
+
+
+
+/* 3 step Holistic hair restoration SECTION !!!!! */
+
+.step h2 {
+  text-align: center;
+  margin-top: 6.25rem;
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+
+.step p {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/*    3 step Holistic hair restoration GRID !!!!!   */
+
+.steps-section {
+  background-image: url("back.png");
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+  margin-top: 50px;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .steps-grid {
+    grid-template-columns: repeat(1, 21.21rem);
+  }
+
+  .center .book-hair {
+
+   display: none;
+
+  }
+
+  .center .book-hair h5 {
+    font-size: 0.6rem;
+  }
+
+  .center .book-hair p {
+    font-size: 0.6rem;
+  }
+}
+
+.steps {
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: #f9e7b7;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  max-width: 350px;
+}
+
+.steps:hover {
+  scale: 1.03;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.our {
+  padding: 0.8rem;
+}
+
+.steps h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.steps h3 {
+  padding-top: 2rem;
+  padding-bottom: 1.4rem;
+}
+
+.steps p {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-hair {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #353535;
+  border: #353535 solid;
+  padding: 0.8rem;
+  background-color: #d90429;
+  color: #ffffff;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-hair:hover {
+  opacity: 0.8;
+  scale: 1.02;
+}
+
+.book-hair p {
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  font-weight: lighter;
+}
+.coupon2 {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.couponn{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* The 5 Hair Reversal Expertise at Clion Care Clinic   Style  */
+
+.expertise {
+  margin-top: 3.1rem;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.expertise-images {
+  justify-content: center;
+  display: flex;
+  margin-top: 3.1rem;
+  margin-bottom: 3.75rem;
+}
+
+.rev:hover {
+  scale: 1.07;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+
+  box-shadow: 5px 5px 10px 1px #353535;
+}
+
+@media (max-width: 900px) {
+  .expertise-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .expertise-images img {
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  .expertise {
+   
+    font-size: 1.5rem;
+  
+  }
+
+  .step h2 {
+    font-size: 1.5rem;
+   
+  }
+
+  .step p {
+    font-size: 1rem;
+    padding: 10px;
+   
+  }
+
+}
+
+/*   <!-- The Right Hair Transplant gives you Permanent Results   carousel  section !!!! - -  >   
+.containerrr {
+  width: 100%;
+  background: #00171f;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.swiper {
+  width: 70%;
+  height: fit-content;
+  position: relative;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 30rem;
+  opacity: 0.8;
+  border-radius: 4rem;
+  margin-bottom: 30px;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #fff;
+}
+.swiper-slide .text {
+  position: absolute;
+  top: 0;
+  padding: 50px;
+}
+.text h2 {
+  text-align: center;
+  font-size: 3.1rem;
+  padding-bottom: 1.3rem;
+  color: #d90429;
+}
+.text p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.transplant {
+  padding: 2.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .text h2 {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+  .swiper {
+    width: 80%;
+  }
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    font-size: 0.2rem;
+  }
+}
+*/
+
+/* The 7 Takeaway of your Free Scalp Analysis  styling carousel STYLING  
+.carousel {
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cro {
+  margin: 3rem;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100%;
+  height: 555px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 7;
+  --middle: 7;
+  --position: 7;
+  pointer-events: none;
+}
+.top {
+}
+#carousel p {
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  font-weight: bold;
+}
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 550px;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) *), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-0deg * var(--r))) translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+  background-color: #f5cb5c;
+  text-align: center;
+}
+.div.item img {
+  width: 5rem;
+  height: 200px;
+}
+div.item:nth-of-type(1) {
+  --offset: 1;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+}
+div.item:nth-of-type(6) {
+  --offset: 6;
+}
+div.item:nth-of-type(7) {
+  --offset: 7;
+}
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+input:nth-of-type(6) {
+  grid-column: 7 / 8;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(6):checked ~ main#carousel {
+  --position: 6;
+}
+input:nth-of-type(7) {
+  grid-column: 8 / 9;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(7):checked ~ main#carousel {
+  --position: 7;
+}
+*/
+
+/* book button styling  after  The 7 Takeaway of your Free Scalp Analysis */
+
+.book-button {
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 5px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.child {
+  font-size: 25px;
+  padding: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #d90429;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+#only {
+  font-size: 15px;
+}
+
+.child:hover {
+  opacity: 0.8;
+  scale: 1.02;
+}
+
+.coupon-2 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 1px;
+  font-size: 14px;
+
+  margin-bottom: 50px;
+}
+
+/*          <!--   Frequently Asked Questions  SECTION  !!!! -->       */
+
+.parent-faq {
+  margin: auto;
+}
+
+.parent-faq h2 {
+  text-align: center;
+}
+
+.section-faq {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9e7b7;
+}
+
+.title {
+  font-size: 3.1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.faq {
+  max-width: 56rem;
+  margin-top: 3.1rem;
+  padding-bottom: 1.2rem;
+  border-bottom: #353535 2px solid;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.question h3 {
+  font-size: 1.5rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.3s ease;
+}
+
+.answer p {
+  padding-top: 0.7rem;
+  line-height: 21px;
+  font-size: 1.1rem;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.3s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* media queris doctors  */
+
+@media (max-width: 700px) {
+  .section-faq {
+    width: 100%;
+  }
+
+  .section-faq h3 {
+
+    font-size: 1.3rem;
+    
+  }
+
+  .section-faq h2 {
+
+
+    font-size: 2rem;
+    padding: 2rem;
+
+    
+  }
+
+  .faq {
+
+    padding: 1.5rem;
+  }
+
+   .coupon2{
+
+    display: none;
+
+   }
+
+
+}
+
+/* <!--      2500+  Success  Stories  & Counting     SECTION  !!!! --> */
+
+.success {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.success p {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.story-wrapper {
+  height: 300px;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.story-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.story-wrapper > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  animation: animation 50s linear infinite;
+}
+
+@keyframes animation {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+
+
+/*        google reviews   SECTION  !!!! -->*/
+
+
+.people-reviews h1 {
+
+ font-size: 2rem;
+ margin-top: 4rem;
+ margin-bottom: 3rem;
+ text-align: center;
+ word-spacing: 5px;
+
+}
+
+
+
+.reviews-slider3{
+  margin-top: 20rem;
+    width: 750px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  
+ 
+ }
+ 
+ 
+ 
+ .carousel-cell3  img{
+ 
+  width: 130px;
+ 
+ }
+ 
+ 
+ .carousel-cell3 {
+ 
+   width: 200px;
+  
+  }
+
+
+  
+ .carousel-cell3 h3 {
+ 
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+ 
+ }
+
+
+
+
+
+
+
+
+/*         <!--      You Deserve Experienced Dermatologists    SECTION  !!!! -->*/
+
+#title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-top: 3.7rem;
+  margin-bottom: 2.2rem;
+}
+
+.grid-expert {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  grid-template-rows: auto;
+  text-align: center;
+  justify-content: center;
+  gap: 8rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+
+.grid-doc {
+  border-radius: 0.5px;
+  border: none;
+  padding: 2.5px;
+  margin-bottom: 2.5px;
+  margin-top: 3rem;
+  background-color: #f9e7b7;
+  border-radius: 1rem;
+  max-width: 400px;
+  align-self: center;
+}
+
+.doc-img {
+  padding: 0.5rem;
+  align-items: center;
+  max-width: 290px;
+  width: 70%;
+  height: 200px;
+}
+
+.grid-doc h2 {
+  padding: 0.8rem;
+}
+
+.grid-doc p {
+  padding: 1rem;
+  text-align: center;
+}
+
+.grid-doc:hover {
+  scale: 1.03;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  
+  
+}
+
+.footer p {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* media queris doctors  */
+
+@media (max-width: 720px) {
+  .grid-expert {
+    grid-template-columns: repeat(1, 20rem);
+  }
+
+  .doc-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .doctors button {
+    font-size: 1rem;
+  }
+}
+
+.book-popup {
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+
+
+
+.book-popup:hover {
+ 
+    opacity: 0.9;
+    scale: 1.01;
+   
+}
+
+.book-popup button {
+  background-color: #EE3E38;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.popup {
+  position: fixed;
+  width: 50%;
+  height: 92vh;
+  max-width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  align-items: left;
+}
+
+#popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.popup .check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+  gap: 1.8rem;
+  
+}
+
+
+.check label {
+
+ font-size: 1.1rem;
+
+}
+
+.popup .grade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1.8rem;
+}
+
+.grade img {
+ 
+  border-radius: 9px;
+
+}
+
+.form {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.form p {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.form h5 {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  margin-top: 1.1rem;
+  text-align: left;
+}
+
+.form-element input {
+  font-size: 1rem;
+  
+  border-radius: 0.5rem;
+  padding:0.5rem;
+  padding-right: 20rem;
+  margin-top: 18px;
+
+  
+}
+
+.form-element {
+  font-size: 1.5rem;
+}
+
+.form h3 {
+ 
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+
+}
+
+.history {
+
+width: 70%;
+font-size: 1.2rem;
+
+padding: 0.7rem;
+
+}
+
+.history  option {
+
+  
+
+  
+  }
+
+.book-popup {
+
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.book-popup button  {
+font-size: 1rem;
+
+}
+
+
+.coupon-2 {
+ font-size: 0.8rem;
+ margin-top: 0.6rem;
+
+}
+
+#only {
+
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+
+
+
+
+@media (max-width: 720px) {
+  .popup {
+    display: flex;
+    width: 95%;
+    align-items: center;
+  
+  }
+
+
+
+  .form-element input {
+    font-size: 0.7rem;
+    padding:8px;
+    border-radius: 0.2rem;
+    margin-top: 15px;
+    border-radius: 7px;
+    
+  }
+
+
+  .form h2 {
+    font-size: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.5rem;
+    word-spacing: 2px;
+  }
+  
+  .form p {
+    font-size: 0.6rem;
+    padding-bottom: 0.8rem;
+  }
+
+
+   .form h5 {
+
+     margin-top: 0.4rem;
+     text-align: center;
+     font-size: 1rem;
+
+   }
+
+
+ .check label {
+ 
+   font-size: 1rem;
+
+}
+
+.form h3 {
+ 
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+
+}
+
+.history {
+
+width: 90%;
+font-size: 1rem;
+
+}
+
+
+.book-popup {
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4px;
+
+}
+
+
+.book-popup button  {
+font-size: 0.8rem;
+
+}
+
+#only {
+
+ font-size: 0.6rem;
+
+}
+
+.coupon-2 {
+ font-size: 0.6rem;
+
+}
+
+.story-wrapper > img {
+  
+  animation: animation 20s linear infinite;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slider 7 takeway   */
+
+.takeaway-slider {
+  text-align: center;
+ 
+}
+
+.carousel-cell .takeaway-image {
+  border: #353535 2px;
+  width: 300px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.carousel-cell h2 {
+  position: absolute;
+  bottom: 13px;
+  margin-left: 45px;
+  margin-right: auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.carousel-cell p {
+  position: absolute;
+  top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.9rem;
+}
+
+.title-takeaway {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.reviews-child {
+  width: 200px;
+}
+
+.reviews-parent {
+  margin: auto;
+  display: flex;
+  position: relative;
+  place-items: center;
+}
+
+
+
+
+
+
+
+/* thankyou page styling */
+
+.thankyou-header {
+  text-align: center;
+}
+
+
+.thankyou-header img {
+
+  width: 20%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.thankyou-header h1{
+  
+   font-size: 4rem;
+}
+
+
+.thankyou-header h3{
+   
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #d1193e;
+}
+
+
+
+.thankyou-header p{
+   
+  margin-top: 1rem;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+
+.line {
+  height: 5px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+
+.flex-order {
+ margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+ gap: 10rem;
+ font-size: 1.2rem;
+ margin-bottom: 10rem;
+
+}
+
+.product-price {
+ margin-top: 30px;
+ display: flex;
+ justify-content: space-between;
+ font-weight: bolder;
+ margin-bottom: 5px;
+
+}
+
+.footer-parent {
+color: white;
+text-align: center;
+background-color: #39587C;
+font-size: 1.2rem;
+
+}
+
+.thankyou-footer {
+ margin-top: rem;
+  display: flex;
+  justify-content: center;
+  gap: 4.2rem;
+  color: white;
+  padding-bottom: 2rem;
+
+}
+
+.footer-parent h1{
+padding-top:  40px;
+padding-bottom: 25px;
+  
+  }
+
+
+  .footer-child {
+  background-color: #2D2D2D;
+
+   color: white;
+   text-align: center;
+
+  }
+  
+   .terms {
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 60px;
+    padding-bottom: 8px;
+   }
+
+
+   .footer-child h2 {
+
+     font-size: 0.8rem;
+     padding-bottom: 90px;
+   }
+
+
+
+@media (max-width: 720px) {
+ 
+  .header-top{
+
+    display: none;
+  }
+
+
+
+  .title-takeaway {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+
+}

@@ -59,11 +59,12 @@ const saveFormData = async (event) => {
     const [key, value] = pair;
     dataToSend[key] = value;
   }
-
-  await fetch(`${BASE_DB_URL}/cliondata/${dataToSend["name"]}.json`, {
+  await fetch(`${BASE_DB_URL}/cliondata/${dataToSend["number"]}.json`, {
     method: "PUT",
     body: JSON.stringify(dataToSend),
   });
+
+  window.location.href = `${window.location.origin}/thankyou.html`
 
   console.log("form saved successfully");
 };
