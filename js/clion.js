@@ -59,6 +59,15 @@ const saveFormData = async (event) => {
     const [key, value] = pair;
     dataToSend[key] = value;
   }
+
+  dataToSend["datetime_readable"] = new Date().toLocaleDateString()
+  dataToSend["timestamp"] = new Date().getTime()
+
+  if (!dataToSend["number"] && !dataToSend['email']) {
+    alert("Pls fill your 'phone number' and 'email'")
+    return
+  }
+
   await fetch(`${BASE_DB_URL}/cliondata/${dataToSend["number"]}.json`, {
     method: "PUT",
     body: JSON.stringify(dataToSend),
