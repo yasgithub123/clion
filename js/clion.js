@@ -25,7 +25,7 @@ const togglePopup = () => {
 
 
 
-const BASE_DB_URL = "https://clion-2-default-rtdb.firebaseio.com";
+const BASE_DB_URL = "https://clion-data-default-rtdb.firebaseio.com";
 
 const testSaveData = async () => {
   console.log("init data to db");
