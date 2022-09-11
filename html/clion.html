@@ -1022,17 +1022,17 @@
             699INR</span> </h2>
         <p>Use the coupon <b> "ScalpTest"</b> to book your free Test </p>
 
-        <form action="" id="contact-form">
+        <form action="" id="contact-form" onsubmit="saveFormData(event)">
           <div class="form-element">
-            <input type="text" name="name" placeholder="Your Name Here">
+            <input type="text" name="name" placeholder="Your Name Here" required minlength="3">
           </div>
 
           <div class="form-element">
-            <input type="text" name="email" placeholder="Your Email Address Here">
+            <input type="email" name="email" placeholder="Your Email Address Here" required>
           </div>
 
           <div class="form-element">
-            <input type="tel" name="number" placeholder="Your Whatsapp number Here">
+            <input type="tel" name="number" placeholder="Your Whatsapp number Here" required minlength="10">
           </div>
           <h5>Your Hair Concerns</h5>
 
@@ -1126,7 +1126,7 @@
 
           </select>
           <div class="book-popup">
-            <button class="popup-booking" type="submit" onclick="saveFormData(event)">
+            <button class="popup-booking" type="submit" >
               <div> <b> Book My Hair Scalp Analysis Appoinment-Just 499 INR </b> </div>
               <span id="only"> Your Free Consultation is valid only for 7 Days </span>
             </button>
